@@ -84,3 +84,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    input("File saved in the .exe's directory. Press enter to exit.")
