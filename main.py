@@ -3,7 +3,6 @@
 @Date: 6/19/21
 @Contact: jkelowitt@protonmail.com
 @Site: https://github.com/jkelowitt/EnergySearchAndSort
-@Version: v1
 
 Given a directory containing log files, output a csv file containing sorted
 energy data.
@@ -83,5 +82,13 @@ def main():
 
 
 if __name__ == "__main__":
+    print("EnergySearchAndSort".center(50, "~"))
+    print("Author: Jackson Elowitt")
+    print("Repo: https://github.com/jkelowitt/EnergySearchAndSort")
+    print("Version: v2")
+    print("".center(50, "~"))
+    print()
+
     main()
-    input("File saved in the .exe's directory. Press enter to exit.")
+
+    input("\nFile saved in the .exe's directory. Press enter to exit.")
