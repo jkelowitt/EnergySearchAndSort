@@ -18,14 +18,14 @@ from tqdm import tqdm
 
 def main():
     # From where to where
-    dir = input("Enter the directory of the .log files: ")
+    directory = input("Enter the directory of the .log files: ")
     output_name = input("What do you want to name the output csv file: ")
 
     # dir = r"F:\Coding Projects\Python\EnergySearchAndSort\datas"
     # output_name = "123"
 
     # Get the files to parse
-    files = glob(dir + "/*.log")
+    files = glob(directory + "/*.log")
 
     if not files:
         input("No log files found in given directory. Press enter to exit.")
@@ -42,7 +42,7 @@ def main():
             data = "".join(f.readlines()).replace("\n ", "")
 
         if not data:
-            print(f"{file[len(dir) + 1:]} had no data, skipping")
+            print(f"{file[len(directory) + 1:]} had no data, skipping")
             continue
 
         # print(data)
@@ -63,7 +63,7 @@ def main():
         else:
             energies.append(None)
 
-        name = file[len(dir) + 1:]
+        name = file[len(directory) + 1:]
         names.append(name)
 
     # Make a pandas dataframe
