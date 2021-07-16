@@ -13,6 +13,7 @@ import re
 from glob import glob
 
 from pandas import DataFrame
+from tqdm import tqdm
 
 
 def main():
@@ -34,7 +35,7 @@ def main():
     energies = []
 
     # Parse geometry and write the files
-    for file in files:
+    for file in tqdm(files, desc="Parsing Files", dynamic_ncols=True):
         # Search for the energy value
         with open(file, "r+") as f:
             # Convert the data into a single string with no new lines
