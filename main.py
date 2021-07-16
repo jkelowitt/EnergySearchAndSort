@@ -21,9 +21,6 @@ def main():
     directory = input("Enter the directory of the .log files: ")
     output_name = input("What do you want to name the output csv file: ")
 
-    # dir = r"F:\Coding Projects\Python\EnergySearchAndSort\datas"
-    # output_name = "123"
-
     # Get the files to parse
     files = glob(directory + "/*.log")
 
@@ -45,7 +42,6 @@ def main():
             print(f"{file[len(directory) + 1:]} had no data, skipping")
             continue
 
-        # print(data)
         # Find the energy using RegEx
         # Give me a string which starts with "HF="
         # Following that, give me ( () ) one or more (+)
