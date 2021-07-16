@@ -82,7 +82,7 @@ if __name__ == "__main__":
     print("EnergySearchAndSort".center(50, "~"))
     print("Author: Jackson Elowitt")
     print("Repo: https://github.com/jkelowitt/EnergySearchAndSort")
-    print("Version: v2")
+    print("Version: v3")
     print("".center(50, "~"))
     print()
 
